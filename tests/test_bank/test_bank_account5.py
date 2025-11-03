@@ -5,7 +5,7 @@ from bank_account import BankAccount
 def test_withdraw_insufficient_balance():
     amount = BankAccount(500)
     with pytest.raises(ValueError, match="残高不足です"):
-        amount.withdraw(501)py
+        amount.withdraw(501)
 
 def test_deposit_positive_amount():
     amount = BankAccount(0)
